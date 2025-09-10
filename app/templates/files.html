@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>파일 목록</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav>
+        <h1>AI_VAMOS</h1>
+        <div class="nav-links">
+            <a href="/">🏠 메인</a>
+            <a href="/upload">📤 업로드</a>
+            <a href="/files">📂 파일 목록</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>업로드된 파일 목록:</h2>
+        <ul>
+            {% for item in items %}
+            <li class="file-item">
+                <div class="file-info">
+                    <!-- 파일명 클릭하면 /play/{filename} -->
+                    <a href="/play/{{ item.name }}"><b>{{ item.name }}</b></a> ({{ item.size }} bytes)
+                    <form action="/delete/{{ item.name }}" method="post" style="display:inline;" onsubmit="return confirm('정말 삭제하시겠습니까?');">
+                        <button type="submit">삭제</button>
+                    </form>
+                </div>
+                {% if item.thumbnail_url %}
+                    <div class="thumbnail">
+                        <img src="{{ item.thumbnail_url }}" alt="thumbnail">
+                    </div>
+                {% else %}
+                    <div class="thumbnail"><i>썸네일 없음</i></div>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="menu">
+            <a class="btn" href="/">🏠 메인으로</a>
+            <a class="btn" href="/upload">📤 새 업로드</a>
+        </div>
+    </div>
+</body>
+</html>

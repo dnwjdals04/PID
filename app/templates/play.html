@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ filename }} - 영상 재생</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav>
+        <h1>AI_VAMOS</h1>
+        <div class="nav-links">
+            <a href="/">🏠 메인</a>
+            <a href="/upload">📤 업로드</a>
+            <a href="/files">📂 파일 목록</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>{{ filename }} 재생</h2>
+        <video width="720" controls>
+            <source src="/uploads/{{ filename }}" type="video/mp4">
+            브라우저가 video/mp4 재생을 지원하지 않습니다.
+        </video>
+        <div class="menu" style="margin-top:20px;">
+            <a class="btn" href="/files">📂 파일 목록으로</a>
+        </div>
+    </div>
+</body>
+</html>
