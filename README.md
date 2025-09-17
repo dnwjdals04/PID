@@ -8,6 +8,7 @@
 ---
 
 ## 📂 프로젝트 구조
+```bash
 PID/
 ├── backend/ # FastAPI 백엔드
 │ ├── app/
@@ -31,7 +32,7 @@ PID/
 │ ├── package-lock.json
 │ └── next.config.js
 └── README.md
-
+```
 
 ---
 
