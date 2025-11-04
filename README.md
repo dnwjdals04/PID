@@ -34,8 +34,8 @@ PID/
 │   │       ├── combine.py
 │   │       └── state.py
 │   │
-│   ├── requirements.txt
-│   └── README.md
+│   └── requirements.txt
+│   
 │
 ├── frontend/
 │   ├── app/
