@@ -50,7 +50,7 @@ PID/
 │   │   └── api.js
 │   ├── styles/
 │   │   ├── glass.css
-│   │   ├── globals.css
+│   │   └── globals.css
 │   ├── package.json
 │   ├── package-lock.json
 │   └── next.config.js
