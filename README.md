@@ -46,7 +46,13 @@ PID/
 │   │   ├── UploadCard.js
 │   │   ├── ProgressBar.js
 │   │   └── VideoCompareCard.js
+│   ├── lib/
+│   │   └── api.js
+│   ├── styles/
+│   │   ├── glass.css
+│   │   ├── globals.css
 │   ├── package.json
+│   ├── package-lock.json
 │   └── next.config.js
 │   
 └── README.md
