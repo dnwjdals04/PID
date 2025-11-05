@@ -27,13 +27,13 @@ PID/
 │   ├── app/
 │   │   ├── main.py
 │   │   ├── routes.py
-│   │   ├── models.py
 │   │   └── services/
 │   │       ├── ai_engine.py
 │   │       ├── preprocess.py
 │   │       ├── combine.py
-│   │       └── state.py
-│   │
+│   │       ├── state.py
+│   │       └── models/
+│   │           └──best.pt
 │   └── requirements.txt
 │   
 │
@@ -45,7 +45,7 @@ PID/
 │   ├── components/
 │   │   ├── UploadCard.js
 │   │   ├── ProgressBar.js
-│   │   └── VideoCompareCard.js
+│   │   └── VideoViewer.js
 │   ├── lib/
 │   │   └── api.js
 │   ├── styles/
