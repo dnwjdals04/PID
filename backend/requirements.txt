@@ -1,0 +1,19 @@
+# --- Web Framework ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+
+# --- AI / CV Libraries ---
+ultralytics==8.2.50             # YOLOv8 (object/face/vehicle segmentation)
+insightface==0.7.3             # Face detection & analysis (InsightFace)
+onnxruntime==1.18.1         # ONNX inference runtime for InsightFace
+opencv-python==4.10.0.84  # Image processing
+numpy>=1.23,<1.25           # Compatible with scipy & onnxruntime
+scipy==1.10.1                   # For numerical ops (numpy<1.25 compatible)
+pydantic==2.9.2
+matplotlib==3.6.3              # InsightFace(face3d) 호환 버전
+
+# --- Utilities ---
+tqdm==4.66.5                   # Progress bar (optional for debugging)
+psutil==5.9.8                    # CPU, memory monitor
+ffmpeg-python==0.2.0        # ✅ 영상 분할/병합용 (필수)
