@@ -65,8 +65,9 @@ PID/
 ### 1. 백엔드 (FastAPI + AI 엔진)
 ```
 cd backend
-python3 -m venv venv
+python3.10 -m venv venv
 source venv/bin/activate   # (Windows: venv\Scripts\activate)
+python -V                        # Python 3.10.12 확인
 pip install -r requirements.txt
 # Python==3.10.12
 uvicorn app.main:app --reload --port 8000
